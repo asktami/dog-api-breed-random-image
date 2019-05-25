@@ -1,5 +1,5 @@
 # dog-api-breed-random-image
-[https://asktami.github.io/dog-api-breed-random-image/](https://asktami.github.io/dog-api-breed-random-image/)
+[View Live](https://asktami.github.io/dog-api-breed-random-image/)
 
 
 Requirements:
