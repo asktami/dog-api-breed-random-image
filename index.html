@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dog API Single Breed Random Image</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dog API: Get Single Breed Random Image</h1>
+
+        <form id="dog_search_form" name="dog_search_form" action="#" method="post">
+        <fieldset>
+        <p>Get a random dog image for the selected breed</p>
+        <p><a href="https://dog.ceo/dog-api/breeds-list" target="_blank">See list of breeds</a>
+        
+        <!--
+        <a href="https://dog.ceo/dog-api/breeds-list" onclick="javascript:void window.open('https://dog.ceo/dog-api/breeds-list','1558750480419','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=500,top=100');return false;">See list of breeds</a>
+        -->
+        
+        </p>
+        
+        <label for"breed">Enter a breed:
+        	<input type="text" name="breed" id="breed" required aria-required="true">
+        </label>
+        
+        <button id="dog_search">Get the image!</button>
+        </fieldset>
+        </form>
+        
+        <section class="error"></section>
+        
+        <section class="results hidden">
+          <div class="results-img">placeholder</div>
+        </section>
+    </div>
+    
+     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+     
+    <script src="script.js"></script>
+</body>
+</html>
