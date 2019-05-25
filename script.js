@@ -29,8 +29,12 @@ function displayResults(responseJson) {
   console.log(responseJson);
   //replace the existing image placeholder div contents
   
-  if(responseJson.message == 'Breed not found'){
-  	$('.error').html('<h2>Breed not found. Try again.</h2>');
+  // alert('status = ' + responseJson.status  );
+  // alert('code = ' + responseJson.code  );
+  // alert('message = ' + responseJson.message  );
+  
+  if(responseJson.status !== 'success'){
+  	$('.error').html(`<h2>${responseJson.message}. Try again.</h2>`);
   	$('.results-img').html('');
   	
   } else {
