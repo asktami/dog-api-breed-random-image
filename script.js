@@ -30,13 +30,17 @@ function displayResults(responseJson) {
   //replace the existing image placeholder div contents
   
   if(responseJson.message == 'Breed not found'){
-  	$('.results-img').html('<h2>Breed not found. Try again.</h2>');
+  	$('.error').html('<h2>Breed not found. Try again.</h2>');
+  	$('.results-img').html('');
+  	
   } else {
   
    // response.message is an array of images
    // use a function to loop thru this array and create a list of images
    let imageArray = responseJson.message;
    $('.results-img').html(formatImages(imageArray));
+   
+  	$('.error').html('');
   
    //display the results section
    $('.results').removeClass('hidden');
